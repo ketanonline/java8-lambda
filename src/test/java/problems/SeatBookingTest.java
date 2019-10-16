@@ -22,6 +22,7 @@ class SeatBookingTest {
     }
     @Test
     void testBookSeats() {
+        System.out.println("Before status = " + seatGroups.stream().map(SeatGroup::status).collect(Collectors.joining("\t\t")));
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
         String[] s1 = s.split(" ");
